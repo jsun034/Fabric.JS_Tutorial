@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+
+    <button onclick="toggleMode(modes.pan)">Toggle Pan</button>
+    <button onclick="toggleMode(modes.drawing)">Toggle Drawing</button>
+    <input id='colorPicker' value="#000000" data-jscolor="">
+    <button onclick="clearCanvas(canvas, svgState)">Clear</button>
+    <button onclick="restoreCanvas(canvas, svgState, bgUrl)">Restore</button>
+    
+    <canvas id="canvas"></canvas>
+
+    <div id="bottomButtons">
+        <div class="buttonsWrapper">
+            <p class="buttonsTitle">Objects</p>
+            <div class="buttons">
+                <button onclick="createRect(canvas)">Rect</button>
+                <button onclick="createCirc(canvas)">Circ</button>
+                <button onclick="groupObjects(canvas, group, true)">Group</button>
+                <button onclick="groupObjects(canvas, group, false)">Ungroup</button>
+            </div>
+
+        </div>
+
+        <div class="buttonsWrapper">
+            <p class="buttonsTitle">Image</p>
+            <input id="myImg" type="file" accept="image/*">
+        </div>
+    </div>
+
+<script src="./lib/jscolor.js"></script>
+<script src="./lib/fabric.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

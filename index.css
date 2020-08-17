@@ -1,0 +1,33 @@
+#bottomButtons {
+    display: flex;
+}
+
+.buttonsWrapper {
+    background-color: rgb(93, 88, 88);
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.buttonsTitle {
+    color: rgb(231, 228, 228);
+    font-size: 17px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#objectButtons > button {
+    margin-bottom: 5px;
+}
+
+#objectButtonsWrapper > #panLinkButton {
+    margin-top: 5px;
+}
